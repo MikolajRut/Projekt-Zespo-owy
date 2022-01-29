@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/98db040e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_k7Bc8iTheuz9OKs4kmSKG");
+      })();
+    </script>
+
+    <link rel="stylesheet" href="css/kontakt.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <i class="far fa-handshake logo"></i>
+        <h1 class="name">
+          <span class="dissapear">Your</span
+          ><span class="lessdark">Office</span>
+        </h1>
+      </div>
+      <div class="header__nav-container">
+        <nav class="header__navbar">
+          <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="home.html" class="header__nav-link home">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="index.html" class="header__nav-link">Oferta</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="form.html" class="header__nav-link">Zamów usługę</a>
+            </li>
+            <li class="header__nav-item last">
+              <a href="panel.html" class="header__nav-link panel logged-out"
+                >Panel</a
+              >
+            </li>
+            <li class="header__nav-item last">
+              <a href="register.html" class="header__nav-link panel logged-in"
+                >Zarejestruj</a
+              >
+            </li>
+            <li class="header__nav-item last logged-in">
+              <p class="header__nav-link" id="logout" name="logout">Wyloguj</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h2 class="title-contact">
+      Kontakt do biura wirtualnego Your<span class="lessdark">Office</span>
+    </h2>
+    <div class="wrap">
+      <section class="contact">
+        <div class="contact__contact">
+          <div class="contact__container">
+            <h3 class="contact__contact-title">Gdańsk</h3>
+            <div class="contact__together">
+              <i class="fas fa-phone"></i>
+              <p class="contact__text">+48 224 645 274</p>
+            </div>
+            <div class="contact__together">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="contact__text">+48 345 746 217</p>
+            </div>
+            <div class="contact__together">
+              <i class="far fa-envelope"></i>
+              <p class="contact__text">biuro@ofice.com</p>
+            </div>
+            <div class="contact__together">
+              <i class="far fa-clock"></i>
+              <p class="contact__text">Pon-pt 8:00-16:00</p>
+            </div>
+          </div>
+          <div class="contact__container">
+            <h3 class="contact__contact-title">Adres</h3>
+            <div class="contact__adress">
+              <p class="contact__single-adres">YourOffice</p>
+              <p class="contact__single-adres">Chlebnicka 9/10</p>
+              <p class="contact__single-adres">80-860 Gdańsk</p>
+              <p class="contact__single-adres">Piętro 5</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="contact__contact-title map-text">Gdzie nas znajdziesz!</h3>
+        <div class="contact__map-container">
+          <iframe
+            class="contact__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.466041061338!2d18.652406616049227!3d54.348745206854986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd73a037dea53d%3A0x4d94f3df6de8d5db!2sChlebnicka%209%2C%2080-830%20Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1618990896742!5m2!1spl!2spl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <h3 class="contact__contact-title map-text">Napisz do nas!</h3>
+        <div class="contact__form">
+          <div class="contact__form-container">
+            <label class="contact__form-name" for="fname"
+              >Imie i Nazwisko</label
+            >
+            <input class="contact__form-input-name" type="text" id="fname" />
+          </div>
+          <div class="contact__form-container">
+            <label class="contact__form-name" for="fname">Email</label>
+            <input class="contact__form-input-email" type="text" id="fname" />
+          </div>
+          <div class="contact__form-container">
+            <label class="contact__form-name" for="fname">Wiadomość</label>
+            <textarea
+              class="contact__form-textarea"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button onclick="sendMail()" class="contact__form-send">
+            Wyślij
+          </button>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <h2 class="footer__info">
+        Nasze <span class="lessdark">SocialMedia!</span>
+      </h2>
+      <div class="footer__icons">
+        <div class="footer__icon-instagram">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="footer__icon-facebook"><i class="fab fa-facebook"></i></div>
+        <div class="footer__icon-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <p class="author">Website designed by Mikołaj Rutkowski</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__chat">
+        <div class="popup__chat-top">
+          <i class="popup__user-image fas fa-user"></i>
+          <p class="popup__user-name">Konsultat</p>
+          <i class="popup__close fas fa-times-circle"></i>
+        </div>
+        <div class="popup__chat-bot">
+          <div class="popup__text"></div>
+          <input type="text" class="popup__input" />
+          <button class="popup__send">Wyślij</button>
+        </div>
+      </div>
+      <i class="popup__click far fa-comment-dots"></i>
+    </div>
+    <script src="js/email.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="module" src="js/logged.js"></script>
+  </body>
+</html>

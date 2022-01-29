@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/98db040e5d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <i class="far fa-handshake logo"></i>
+        <h1 class="name">
+          <span class="dissapear">Your</span
+          ><span class="lessdark">Office</span>
+        </h1>
+      </div>
+      <div class="header__nav-container">
+        <nav class="header__navbar">
+          <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="home.html" class="header__nav-link home">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="index.html" class="header__nav-link">Oferta</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="form.html" class="header__nav-link">Zamów usługę</a>
+            </li>
+            <li class="header__nav-item last">
+              <a href="panel.html" class="header__nav-link panel logged-out"
+                >Panel</a
+              >
+            </li>
+            <li class="header__nav-item last">
+              <a href="login.html" class="header__nav-link panel logged-in"
+                >Panel</a
+              >
+            </li>
+            <li class="header__nav-item last logged-in">
+              <p class="header__nav-link" id="logout" name="logout">Wyloguj</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h2 class="title-panel-klient">
+      Panel Klienta Your<span class="lessdark">Office</span>
+    </h2>
+    <section class="wrap">
+      <section class="post-container">
+        <div class="post-container__box-search">
+          <h3 class="post-container__title">Poczta</h3>
+          <div id="searchWrapper" class="post-container__boxing">
+            <input
+              class="post-container__search"
+              type="text"
+              name="searchBar"
+              id="searchBar"
+              placeholder="Szukaj"
+            />
+          </div>
+        </div>
+        <div class="post-container__box">
+          <ul class="post-container__list">
+            <li class="post-container__item">
+              <p class="post-container__who">Sąd</p>
+              <p class="post-container__description">polecony 27.01.2022</p>
+              <i class="post-container__icon fas fa-envelope"></i>
+              <i class="post-container__download fas fa-file-download"></i>
+            </li>
+            <li class="post-container__item">
+              <p class="post-container__who">Bank</p>
+              <p class="post-container__description">zwykły 26.01.2022</p>
+              <i class="post-container__icon fas fa-envelope"></i>
+              <i class="post-container__download fas fa-file-download"></i>
+            </li>
+            <li class="post-container__item">
+              <p class="post-container__who">Reklama</p>
+              <p class="post-container__description">zwykły 26.01.2022</p>
+              <i class="post-container__icon fas fa-envelope"></i>
+              <i class="post-container__download fas fa-file-download"></i>
+            </li>
+            <li class="post-container__item">
+              <p class="post-container__who">Komornik</p>
+              <p class="post-container__description">polecony 25.01.2022</p>
+              <i class="post-container__icon fas fa-envelope"></i>
+              <i class="post-container__download fas fa-file-download"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="post-container__letter-box">
+          <i class="post-container__close fas fa-times"></i>
+          <img src="img/letter.jpg" alt="" class="post-container__letter" />
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <h2 class="footer__info">
+        Nasze <span class="lessdark">SocialMedia!</span>
+      </h2>
+      <div class="footer__icons">
+        <div class="footer__icon-instagram">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="footer__icon-facebook"><i class="fab fa-facebook"></i></div>
+        <div class="footer__icon-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <p class="author">Website designed by Mikołaj Rutkowski</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__chat">
+        <div class="popup__chat-top">
+          <i class="popup__user-image fas fa-user"></i>
+          <p class="popup__user-name">Konsultat</p>
+          <i class="popup__close fas fa-times-circle"></i>
+        </div>
+        <div class="popup__chat-bot">
+          <div class="popup__text"></div>
+          <input type="text" class="popup__input" />
+          <button class="popup__send">Wyślij</button>
+        </div>
+      </div>
+      <i class="popup__click far fa-comment-dots"></i>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/filter.js"></script>
+    <script type="module" src="js/logged.js"></script>
+  </body>
+</html>

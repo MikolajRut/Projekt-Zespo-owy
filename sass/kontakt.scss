@@ -1,0 +1,136 @@
+@import "header";
+@import "reset";
+@import "footer";
+
+.title-contact {
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin: 13vh 0 3vh;
+
+  @media (min-width: 425px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 525px) {
+    font-size: 35px;
+  }
+}
+
+.wrap {
+  background-color: rgb(243, 233, 233);
+}
+
+.contact {
+  padding: 0 30px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__contact {
+    @media (min-width: 800px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__adress {
+    margin-bottom: 30px;
+  }
+
+  &__contact-title {
+    padding-top: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(128, 15, 15);
+    letter-spacing: 1px;
+  }
+
+  &__single-adres {
+    font-size: 20px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+
+  &__together {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__map-container {
+    margin: 0 auto 20px;
+  }
+
+  &__map {
+    width: 100%;
+    height: 30vh;
+
+    @media (min-width: 800px) {
+      height: 40vh;
+    }
+
+    @media (min-width: 1080px) {
+      height: 50vh;
+    }
+  }
+
+  & .map-text {
+    margin-top: -15px;
+  }
+
+  &__form {
+    margin-top: 30px;
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__form-name {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(128, 15, 15);
+  }
+
+  &__form-input-name {
+    padding: 3px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  &__form-input-email {
+    padding: 3px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  &__form-textarea {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  &__form-send {
+    margin: 15px auto 10px;
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(160, 15, 15);
+    border: none;
+    color: white;
+  }
+}

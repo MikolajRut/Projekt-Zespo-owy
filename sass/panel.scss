@@ -1,0 +1,89 @@
+@import "reset";
+@import "header";
+@import "footer";
+
+.title-panel {
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin: 13vh 0 3vh;
+
+  @media (min-width: 425px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 525px) {
+    font-size: 35px;
+  }
+}
+
+.wrap {
+  background-color: rgb(243, 233, 233);
+}
+
+.login {
+  padding: 20px;
+  background-color: rgb(243, 233, 233);
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__text {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @media (min-width: 425px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 525px) {
+      font-size: 25px;
+    }
+  }
+
+  &__input {
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+
+    @media (min-width: 1080px) {
+      width: 40%;
+    }
+  }
+
+  &__send {
+    text-transform: uppercase;
+    margin: 15px auto 10px;
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(160, 15, 15);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__button {
+    text-decoration: none;
+  }
+}
+
+#singUp.login__button {
+  text-transform: uppercase;
+  margin: 15px auto 10px;
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(160, 15, 15);
+  border: none;
+  color: white;
+  cursor: pointer;
+}

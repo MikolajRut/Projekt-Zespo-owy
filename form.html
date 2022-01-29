@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/98db040e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="google-site-verification"
+      content="J2GqBVagSu6jzsycaEEmYpjucxnnEUGoW7TJZQn8yXE"
+    />
+
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <i class="far fa-handshake logo"></i>
+        <h1 class="name">
+          <span class="dissapear">Your</span
+          ><span class="lessdark">Office</span>
+        </h1>
+      </div>
+      <div class="header__nav-container">
+        <nav class="header__navbar">
+          <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="home.html" class="header__nav-link home">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="index.html" class="header__nav-link">Oferta</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="form.html" class="header__nav-link">Zamów usługę</a>
+            </li>
+            <li class="header__nav-item last">
+              <a href="panel.html" class="header__nav-link panel logged-out"
+                >Panel</a
+              >
+            </li>
+            <li class="header__nav-item last">
+              <a href="register.html" class="header__nav-link panel logged-in"
+                >Zarejestruj</a
+              >
+            </li>
+            <li class="header__nav-item last logged-in">
+              <p class="header__nav-link" id="logout" name="logout">Wyloguj</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h2 class="title-form">
+      Kwestionariusz rejestracyjny biura wirtualnego Your<span class="lessdark"
+        >Office</span
+      >
+    </h2>
+    <div class="wrap">
+      <form action="" class="form">
+        <p class="form__info">Pola oznaczone* są obowiązkowe</p>
+        <div class="form__container">
+          <label class="form__name" for="fname"
+            >Nazwa firmy/działalności*</label
+          >
+          <input class="form__input" type="text" id="fname" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="fnip">NIP</label>
+          <input class="form__input" type="text" id="fnip" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="fkrs">KRS lub REGON</label>
+          <input class="form__input" type="text" id="fkrs" />
+        </div>
+        <div class="form__container">
+          <p class="form__name" for="fkrs">Na jaki pakiet umowa</p>
+          <div class="form__radio">
+            <input type="radio" id="adres" name="offer" />
+            <label for="adres">Adres</label>
+          </div>
+          <div class="form__radio">
+            <input type="radio" id="skan" name="offer" />
+            <label for="skan">Skan</label>
+          </div>
+          <div class="form__radio">
+            <input type="radio" id="sekretarka" name="offer" />
+            <label for="sekretarka">Sekretarka</label>
+          </div>
+        </div>
+        <div class="form__container">
+          <p class="form__name" for="fkrs">Rodzaj pakietu*</p>
+          <div class="form__radio">
+            <input type="radio" id="onemon" name="offer-time" />
+            <label for="onemon">1 miesiąc</label>
+          </div>
+          <div class="form__radio">
+            <input type="radio" id="thremon" name="offer-time" />
+            <label for="thremon">3 miesiące</label>
+          </div>
+          <div class="form__radio">
+            <input type="radio" id="twmon" name="offer-time" />
+            <label for="twmon">12 miesięcy </label>
+          </div>
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="fdate"
+            >Od kiedy firma ma być zarejestrowana*</label
+          >
+          <input class="form__input" type="text" id="fdate" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="pname">Imię i Nazwisko*</label>
+          <input class="form__input" type="text" id="pname" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="pphone">Numer telefonu*</label>
+          <input class="form__input" type="text" id="pphone" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="pemail">Email*</label>
+          <input class="form__input" type="text" id="pemail" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="padres"
+            >Dane do wysyłki korespondencji</label
+          >
+          <input class="form__input" type="text" id="padres" />
+        </div>
+        <div class="form__container">
+          <label class="form__name" for="padres-name">Nazwa adresata</label>
+          <input class="form__input" type="text" id="padres-name" />
+        </div>
+        <button class="form__send">Wyślij</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <h2 class="footer__info">
+        Nasze <span class="lessdark">SocialMedia!</span>
+      </h2>
+      <div class="footer__icons">
+        <div class="footer__icon-instagram">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="footer__icon-facebook"><i class="fab fa-facebook"></i></div>
+        <div class="footer__icon-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <p class="author">Website designed by Mikołaj Rutkowski</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__chat">
+        <div class="popup__chat-top">
+          <i class="popup__user-image fas fa-user"></i>
+          <p class="popup__user-name">Konsultat</p>
+          <i class="popup__close fas fa-times-circle"></i>
+        </div>
+        <div class="popup__chat-bot">
+          <div class="popup__text"></div>
+          <input type="text" class="popup__input" />
+          <button class="popup__send">Wyślij</button>
+        </div>
+      </div>
+      <i class="popup__click far fa-comment-dots"></i>
+    </div>
+    <script src="js/menu.js"></script>
+    <script type="module" src="js/logged.js"></script>
+  </body>
+</html>

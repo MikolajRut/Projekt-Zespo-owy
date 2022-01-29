@@ -1,0 +1,117 @@
+@import "reset";
+@import "header";
+@import "footer";
+
+.title-offer {
+    text-align: center;
+    opacity: .8;
+    letter-spacing: 1px;
+    margin: 13vh 0 3vh;
+
+    @media (min-width: 425px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 525px) {
+        font-size: 35px;
+    }
+}
+
+.offer {
+    background-color: rgb(243, 233, 233);
+
+    &__name {
+        background-color: rgb(128, 15, 15);
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-indent: 15%;
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__nav-list {
+        padding: 20px 30px;
+        max-width: 1200px;
+    }
+
+    &__nav-item {
+        font-weight: 300;
+        margin-top: 5px;
+    }
+
+    &__price-container {
+        padding: 0 20px 10px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 40% 1fr auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "btn one-month one-price"
+            "btn three-months three-price"
+            "btn tw-months tw-price";
+    }
+
+    &__btn {
+        grid-area: btn;
+        width: 90%;
+        justify-self: center;
+        padding: 15px;
+        text-transform: uppercase;
+        background-color: rgb(160, 15, 15);
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+
+    &__name-price {
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .one-month {
+        grid-area: one-month;
+    }
+
+    .one-price {
+        grid-area: one-price;
+    }
+
+    .three-months {
+        grid-area: three-months;
+    }
+
+    .three-price {
+        grid-area: three-price;
+    }
+
+    .tw-months {
+        grid-area: tw-months;
+    }
+
+    .tw-price {
+        grid-area: tw-price;
+    }
+
+    &__info {
+        text-align: right;
+        padding: 0px 20px 40px;
+        font-size: 13px;
+        font-style: italic;
+    }
+}
